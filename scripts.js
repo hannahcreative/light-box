@@ -17,6 +17,21 @@ $(function() {
       title: "Project1 Title",
       desc: "Project1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa eveniet neque ullam iure aut officiis eius laborum accusantium at? Perferendis laboriosam odio minima facilis ipsum, voluptate inventore quia, voluptas!",
       img: 'http://placehold.it/350x150'
+    },
+    'project2': {
+      title: "Project2 Title",
+      desc: "Project2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa eveniet neque ullam iure aut officiis eius laborum accusantium at? Perferendis laboriosam odio minima facilis ipsum, voluptate inventore quia, voluptas!",
+      img: 'http://placehold.it/350x150'
+    },
+    'project3': {
+      title: "Project3 Title",
+      desc: "Project3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa eveniet neque ullam iure aut officiis eius laborum accusantium at? Perferendis laboriosam odio minima facilis ipsum, voluptate inventore quia, voluptas!",
+      img: 'http://placehold.it/350x150'
+    },
+    'project4': {
+      title: "Project4 Title",
+      desc: "Project4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa eveniet neque ullam iure aut officiis eius laborum accusantium at? Perferendis laboriosam odio minima facilis ipsum, voluptate inventore quia, voluptas!",
+      img: 'http://placehold.it/350x150'
     }
   }; 
 
@@ -37,6 +52,10 @@ $(function() {
     // fill in desc
     $('.projectDesc').text(currentProject.desc);
   });
+
+  // use if statment, and event listener on the overlayouter - when someone clicks overlay outer make sure they didn't click the lighbox. on click of overlay outer check to see what was clicked (use e.target)
+
+
 });
 
 
