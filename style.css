@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif; }
+
+.box {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: indigo;
+  margin: 2%;
+  padding: 5%;
+  text-align: center;
+  color: #fff; }
+
+.lightbox {
+  width: 300px;
+  height: 200px;
+  background: indigo; }
+
+/*# sourceMappingURL=style.css.map */
