@@ -8,15 +8,19 @@
 <body>
   <h1>Hannah Allen</h1>
   <ul>
-    <li class="box" id="project1">Project 1</li>
-    <li class="box" id="project2">Project 2</li>
-    <li class="box" id="project3">Project 3</li>
-    <li class="box" id="project4">Project 4</li>
+    <li class="box" data-category="design" id="project1">Project 1</li>
+    <li class="box" data-category="dev" id="project2">Project 2</li>
+    <li class="box" data-category="cheese" id="project3">Project 3</li>
+    <li class="box" data-category="design" id="project4">Project 4</li>
   </ul>
-  <div class="lightbox">
-    <img src="#" class="lightboxImg">
-    <p class="projectTitle"></p>
-    <p class="projectDesc"></p>
+  <div class="lightboxWrapper">
+    <div class="lightbox">
+      <img src="#" class="lightboxImg">
+      <div class="text">
+        <p class="projectTitle"></p>
+        <p class="projectDesc"></p>
+      </div> 
+    </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="scripts.js"></script> 
