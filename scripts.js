@@ -54,8 +54,9 @@ $(function() {
   });
 
   // use if statment, and event listener on the overlayouter - when someone clicks overlay outer make sure they didn't click the lighbox. on click of overlay outer check to see what was clicked (use e.target)
+  // $('body').on(click, function(e)
 
-
+  //   );
 });
 
 
