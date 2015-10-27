@@ -1,16 +1,3 @@
-// step 1
-// on click, capture ID of unqiue project box - use this, maybe data attributes
-
-// step 2
-//  map ID to data - data will have objects that store content for each of the projects  - each object will store content for specific project make sure each object has an ID as a value/property to connect with
-
-// step 3
-// populate lightbox container (sample div) with information - this can be done using vanilla JS or jQuery
-
-// step 4
-// close lightbox
-
-
 //'un-hide' the lightbox div
 function toggleLightBox() {
   $('.lightbox').toggle();
@@ -59,15 +46,16 @@ $(function() {
     toggleLightBox();
   });
 
-  // use if statment, and event listener on the overlayouter - when someone clicks overlay outer make sure they didn't click the lighbox. on click of overlay outer check to see what was clicked (use e.target)
-   // and if statement to check if they clicked on .lightboxWrapper directly, or something inside of it
-  
-  $('.lightboxWrapper').click(function(e){
+   // and if statement and e.target to check if they clicked on .lightboxWrapper directly, or something inside of it
+    $('.lightboxWrapper').click(function(e){
     
-    // turn the target element into a jQuery element
+    // using jQuery - turn the target element into a jQuery element
     // var clickedElement = $(e.target);
-
     // if (clickedElement.hasClass('lightboxWrapper')) {
+    //   toggleLightBox();
+    // }
+
+    // using vanilla JavaScript 
     if (e.target.classList.contains('lightboxWrapper')) {
       console.log('success');
       toggleLightBox();
@@ -75,10 +63,14 @@ $(function() {
   });
 });
 
+function sort(attribute) {
+  // first hide everything
+  $('.box').hide();
+  // then show the ones that you want
+  $('[data-category="'+attribute+'"]').show()
+};
 
-
-// Add in some kind of sorting function
-
-// when someone clicks the filter for cheese button, 
-// 1. select All the elements
-// 2. Loop over the elements and for each element have an if statement that looks for matching catrogey do show or else hide
+// when the user selects a category, do the previous function
+// $('[data-category="cat-1"]').onclick = function() {
+//    alert("button was clicked");
+// }​;​
